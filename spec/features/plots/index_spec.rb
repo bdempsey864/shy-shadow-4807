@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'plots index page' do
   context 'when i visit plots index page' do
-    before :each do
+    before(:each) do
       @turing_garden = Garden.create!(name: 'Turing Community Garden', organic: true)
       @library_garden = Garden.create!(name: 'Public Library Garden', organic: true)
       @other_garden = Garden.create!(name: 'Main Street Garden', organic: false)
